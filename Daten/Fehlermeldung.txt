@@ -1,0 +1,7 @@
+/usr/bin/python3.10 /home/cabuk/uni/projektgruppe_strom/Wetterdienst_Anfrage.py
+No data available for given constraints
+shape: (0, 0)
+┌┐
+╞╡
+└┘
+└┘
