@@ -30,7 +30,9 @@ for feature in features:
 
 # Entfernen von Zeilen mit fehlenden Werten nach der Erstellung der Sliding-Window-Features
 data.dropna(inplace=True)
-
+# Hinzufügen der aktuellen Werte der Features zu den Sliding-Window-Features
+for feature in features:
+    X[feature] = data[feature]
 # Vorbereiten der Feature- und Zielvariablen
 X = data[[f'{feature}_lag_{window}' for feature in features for window in range(1, window_size + 1)]]
 y = data['Wind Onshore [MWh] Berechnete Auflösungen']
